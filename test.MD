@@ -33,7 +33,7 @@ Compile winmm64, MelonLoader, and MelonLoader.ModHandler then follow the install
 ### GET UNITY VERSION
 
 1. Open the file `\<GAME FOLDER>\<GAME>_Data\Resources\unity default resources` with a text editor like [Notepad++](https://notepad-plus-plus.org/)
-    - If you don't see it you can try guessing the Unity version by checking the file version of the main game EXE
+   - If you don't see it you can try guessing the Unity version by checking the file version of the main game EXE
 2. In the first line you should see something like `­ 9ëd   2019.1.0b1` where `2019.1.0b1` would be the unity version
 
 ---
@@ -41,8 +41,8 @@ Compile winmm64, MelonLoader, and MelonLoader.ModHandler then follow the install
 ### UNITY DEPENDENCY GENERATION:
 
 1. Download the correct unity version found [here](#GET-UNITY-VERSION)
-    - Release: `https://unity3d.com/unity/whats-new/<VERSION>`
-    - Beta: `https://unity3d.com/unity/beta/<VERSION>`
+   - Release: `https://unity3d.com/unity/whats-new/<VERSION>`
+   - Beta: `https://unity3d.com/unity/beta/<VERSION>`
 2. Install it (you don't need anything other than the core files [no need to select il2cpp or mono])
 3. Start it and create a new project
 4. Make sure that you scene is completely empty
