@@ -21,7 +21,7 @@ Compile winmm64, MelonLoader, and MelonLoader.ModHandler then follow the install
 ## LAUNCH OPTIONS:
 
 | Argument              | Description                              |
-|-----------------------|------------------------------------------|
+| --------------------- | ---------------------------------------- |
 | --no-mods             | Launch game without loading Mods         |
 | --melonloader.console | Normal Console                           |
 | --melonloader.debug   | Debug Console                            |
@@ -32,7 +32,8 @@ Compile winmm64, MelonLoader, and MelonLoader.ModHandler then follow the install
 ## GET UNITY VERSION
 
 1. Open the file `\<GAME FOLDER>\<GAME>_Data\Resources\unity default resources` with a text editor like [Notepad++](https://notepad-plus-plus.org/) (If you don't see it you can try guessing the Unity version by checking the file version of the main game EXE)
-2. In the first line you should see something like `  ­ 9ëd          2019.1.0b1` where `2019.1.0b1` would be the unity version
+2. In the first line you should see something like `­ 9ëd   2019.1.0b1` where `2019.1.0b1` would be the unity version
+
 ---
 
 ## UNITY DEPENDENCY GENERATION:
@@ -42,6 +43,7 @@ Compile winmm64, MelonLoader, and MelonLoader.ModHandler then follow the install
 3. Start it and create a new project
 4. Make sure that you scene is completely empty
 5. 1
+
 ---
 
 ## CONSOLE DIFFERENCES:
@@ -55,9 +57,9 @@ Compile winmm64, MelonLoader, and MelonLoader.ModHandler then follow the install
 - All Logs are made in the created Logs folder in the game's install folder.
 
 Specific combinations of Compile Versions will open a specific Console by Default:
-| MelonLoader | MelonLoader.ModHandler | Result                        |
+| MelonLoader | MelonLoader.ModHandler | Result |
 |-------------|------------------------|-------------------------------|
-| DEBUG       | RELEASE                | Debug Console                 |
-| RELEASE     | DEBUG                  | Normal Console                |
-| DEBUG       | DEBUG                  | Debug Console                 |
-| RELEASE     | RELEASE                | Left up to the Launch Options |
+| DEBUG | RELEASE | Debug Console |
+| RELEASE | DEBUG | Normal Console |
+| DEBUG | DEBUG | Debug Console |
+| RELEASE | RELEASE | Left up to the Launch Options |
