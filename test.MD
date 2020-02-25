@@ -70,9 +70,10 @@ Compile winmm64, MelonLoader, and MelonLoader.ModHandler then follow the install
 - All Logs are made in the created Logs folder in the game's install folder.
 
 #### Specific combinations of Compile Versions will open a specific Console by Default:
-| MelonLoader | ModHandler | Result |
-|-------------|------------------------|-------------------------------|
-| DEBUG | RELEASE | Debug Console |
-| RELEASE | DEBUG | Normal Console |
-| DEBUG | DEBUG | Debug Console |
-| RELEASE | RELEASE | Left up to the Launch Options |
+
+| MelonLoader | ModHandler | Result                        |
+| ----------- | ---------- | ----------------------------- |
+| DEBUG       | RELEASE    | Debug Console                 |
+| RELEASE     | DEBUG      | Normal Console                |
+| DEBUG       | DEBUG      | Debug Console                 |
+| RELEASE     | RELEASE    | Left up to the Launch Options |
