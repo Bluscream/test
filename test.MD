@@ -4,34 +4,34 @@ Compile winmm64, MelonLoader, and MelonLoader.ModHandler then follow the install
 
 ## IL2CPP GAME INSTALLATION:
 
-1)  Place winmm.dll next to the game's exe.
-2)  Copy the MelonLoader folder from BaseLibs to the game's install folder next to the exe and winmm.dll.
-3)  Place MelonLoader.dll and MelonLoader.ModHandler.dll in the MelonLoader folder in the game's install folder.
-4)  Find the game's Unity version in Unity Dependencies in BaseLibs. If it does not exist take a look at [UNITY DEPENDENCY GENERATION](#UNITY-DEPENDENCY-GENERATION)
-5)  Extract the zip to the MelonLoader folder in the game's install folder.
+1.  Place winmm.dll next to the game's exe.
+2.  Copy the MelonLoader folder from BaseLibs to the game's install folder next to the exe and winmm.dll.
+3.  Place MelonLoader.dll and MelonLoader.ModHandler.dll in the MelonLoader folder in the game's install folder.
+4.  Find the game's Unity version in Unity Dependencies in BaseLibs. If it does not exist take a look at [UNITY DEPENDENCY GENERATION](#UNITY-DEPENDENCY-GENERATION)
+5.  Extract the zip to the MelonLoader folder in the game's install folder.
 
 ---
 
 ## MONO GAME INSTALLATION:
 
-1)  Place winmm.dll next to the game's exe.
-2)  Create a new folder named MelonLoader in the game's install folder.
-3)  Place MelonLoader.dll and MelonLoader.ModHandler.dll in the MelonLoader folder in the game's install folder.
+1.  Place winmm.dll next to the game's exe.
+2.  Create a new folder named MelonLoader in the game's install folder.
+3.  Place MelonLoader.dll and MelonLoader.ModHandler.dll in the MelonLoader folder in the game's install folder.
 
 ---
 
 ## LAUNCH OPTIONS:
 
-"--no-mods"  =  Launch game without loading Mods
-"--melonloader.console"  =  Normal Console
-"--melonloader.debug"  =  Debug Console
-"--melonloader.mupot"  =  Experimental MUPOT Mode for IL2CPP Games
+"--no-mods" = Launch game without loading Mods
+"--melonloader.console" = Normal Console
+"--melonloader.debug" = Debug Console
+"--melonloader.mupot" = Experimental MUPOT Mode for IL2CPP Games
 
 ---
 
 ## UNITY DEPENDENCY GENERATION:
 
-1) 
+1.
 
 ---
 
@@ -46,7 +46,7 @@ All Mods get placed in the created Mods folder in the game's install folder.
 All Logs are made in the created Logs folder in the game's install folder.
 
 Specific combinations of Compile Versions will open a specific Console by Default:
-MelonLoader [DEBUG] & MelonLoader.ModHandler [RELEASE]  =  Debug Console
-MelonLoader [RELEASE] & MelonLoader.ModHandler [DEBUG]  =  Normal Console
-MelonLoader [DEBUG] & MelonLoader.ModHandler [DEBUG]  =  Debug Console
-MelonLoader [RELEASE] & MelonLoader.ModHandler [RELEASE]  =  Left up to the Launch Options
+MelonLoader [DEBUG] & MelonLoader.ModHandler [RELEASE] = Debug Console
+MelonLoader [RELEASE] & MelonLoader.ModHandler [DEBUG] = Normal Console
+MelonLoader [DEBUG] & MelonLoader.ModHandler [DEBUG] = Debug Console
+MelonLoader [RELEASE] & MelonLoader.ModHandler [RELEASE] = Left up to the Launch Options
