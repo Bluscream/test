@@ -4,21 +4,21 @@ Compile winmm64, MelonLoader, and MelonLoader.ModHandler then follow the install
 
 ## IL2CPP GAME INSTALLATION:
 
-1.  Place winmm.dll next to the game's exe.
-2.  Copy the MelonLoader folder from BaseLibs to the game's install folder next to the exe and winmm.dll.
-3.  Place MelonLoader.dll and MelonLoader.ModHandler.dll in the MelonLoader folder in the game's install folder.
-4.  Find the game's Unity version in Unity Dependencies in BaseLibs. If it does not exist take a look at [UNITY DEPENDENCY GENERATION](#UNITY-DEPENDENCY-GENERATION)
-5.  Extract the zip to the MelonLoader folder in the game's install folder.
+1.  Place `winmm.dll` next to the game's exe.
+2.  Copy the `MelonLoader` folder from `<REPO>\BaseLibs` to the game's install folder next to the exe and `winmm.dll`.
+3.  Place `MelonLoader.dll` and `MelonLoader.ModHandler.dll` in the `MelonLoader` folder in the game's install folder.
+4.  [Find the game's Unity version](#GET-UNITY-VERSION) in Unity Dependencies in BaseLibs. If it does not exist you need to [generate it yourself](#UNITY-DEPENDENCY-GENERATION)
+5.  Extract the zip to the `MelonLoader` folder in the game's install folder.
 
 ## MONO GAME INSTALLATION:
 
-1.  Place winmm.dll next to the game's exe.
-2.  Create a new folder named MelonLoader in the game's install folder.
-3.  Place MelonLoader.dll and MelonLoader.ModHandler.dll in the MelonLoader folder in the game's install folder.
+1.  Place `winmm.dll` next to the game's exe.
+2.  Create a new folder named `MelonLoader` in the game's install folder.
+3.  Place `MelonLoader.dll` and `MelonLoader.ModHandler.dll` in the `MelonLoader` folder in the game's install folder.
 
 ---
 
-## LAUNCH OPTIONS:
+### LAUNCH OPTIONS:
 
 | Argument              | Description                              |
 | --------------------- | ---------------------------------------- |
@@ -29,14 +29,14 @@ Compile winmm64, MelonLoader, and MelonLoader.ModHandler then follow the install
 
 ---
 
-## GET UNITY VERSION
+### GET UNITY VERSION
 
 1. Open the file `\<GAME FOLDER>\<GAME>_Data\Resources\unity default resources` with a text editor like [Notepad++](https://notepad-plus-plus.org/) (If you don't see it you can try guessing the Unity version by checking the file version of the main game EXE)
 2. In the first line you should see something like `­ 9ëd   2019.1.0b1` where `2019.1.0b1` would be the unity version
 
 ---
 
-## UNITY DEPENDENCY GENERATION:
+### UNITY DEPENDENCY GENERATION:
 
 1. Download Unity from `https://unity3d.com/unity/beta/<VERSION>` if it's a beta or `https://unity3d.com/unity/whats-new/<VERSION>`
 2. Install it (you don't need anything other than the core files [no need to select il2cpp or mono])
@@ -46,7 +46,7 @@ Compile winmm64, MelonLoader, and MelonLoader.ModHandler then follow the install
 
 ---
 
-## CONSOLE DIFFERENCES:
+### CONSOLE DIFFERENCES:
 
 - Normal Console is for the Logger class used by MelonLoader.ModHandler and Mods for debugging and developing Mods.
 - Debug Console is for the debugging of MelonLoader internals.
@@ -57,7 +57,7 @@ Compile winmm64, MelonLoader, and MelonLoader.ModHandler then follow the install
 - All Logs are made in the created Logs folder in the game's install folder.
 
 Specific combinations of Compile Versions will open a specific Console by Default:
-| MelonLoader | MelonLoader.ModHandler | Result |
+| MelonLoader | ModHandler | Result |
 |-------------|------------------------|-------------------------------|
 | DEBUG | RELEASE | Debug Console |
 | RELEASE | DEBUG | Normal Console |
