@@ -54,6 +54,7 @@ Compile winmm64, MelonLoader, and MelonLoader.ModHandler then follow the install
 9. Move all files that do **not** already exist in [`<REPO>\BaseLibs\MelonLoader\Managed\`](https://gitlab.com/HerpDerpinstine/MelonLoader/-/tree/master/BaseLibs/MelonLoader/Managed) into `<FOLDER_YOU_CREATED_IN_STEP_7\Managed\`
    - For comparison you can use a tool like [WinMerge](https://winmerge.org/)
    - Example Diff: https://gist.github.com/Bluscream/120d634988a4b37cf1f97b01ecf47214#file-melonloader_unity_diff-csv
+   - Files not starting with Unity... and XML files should not end up in `<FOLDER_YOU_CREATED_IN_STEP_7\Managed\`!
 10. Move the `UnityPlayer.dll` from `<UNITY_PROJECT_PATH>\` to `<FOLDER_YOU_CREATED_IN_STEP_7\Mono\` and rename it to `MonoUnityPlayer.dll`
 11. ZIP up the `Managed\` and `Mono\` folder in a `<UNITY_VERSION>.zip` and either [pull request it into the repo directly](https://gitlab.com/HerpDerpinstine/MelonLoader/-/tree/master/BaseLibs/Unity%20Dependencies#modal-upload-blob) or drop it on the discord and mention one of the repo maintainers.
 
