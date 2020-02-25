@@ -10,8 +10,6 @@ Compile winmm64, MelonLoader, and MelonLoader.ModHandler then follow the install
 4.  Find the game's Unity version in Unity Dependencies in BaseLibs. If it does not exist take a look at [UNITY DEPENDENCY GENERATION](#UNITY-DEPENDENCY-GENERATION)
 5.  Extract the zip to the MelonLoader folder in the game's install folder.
 
----
-
 ## MONO GAME INSTALLATION:
 
 1.  Place winmm.dll next to the game's exe.
@@ -22,31 +20,44 @@ Compile winmm64, MelonLoader, and MelonLoader.ModHandler then follow the install
 
 ## LAUNCH OPTIONS:
 
-"--no-mods" = Launch game without loading Mods
-"--melonloader.console" = Normal Console
-"--melonloader.debug" = Debug Console
-"--melonloader.mupot" = Experimental MUPOT Mode for IL2CPP Games
+| Argument              | Description                              |
+|-----------------------|------------------------------------------|
+| --no-mods             | Launch game without loading Mods         |
+| --melonloader.console | Normal Console                           |
+| --melonloader.debug   | Debug Console                            |
+| --melonloader.mupot   | Experimental MUPOT Mode for IL2CPP Games |
 
+---
+
+## GET UNITY VERSION
+
+1. Open the file `\<GAME FOLDER>\<GAME>_Data\Resources\unity default resources` with a text editor like [Notepad++](https://notepad-plus-plus.org/) (If you don't see it you can try guessing the Unity version by checking the file version of the main game EXE)
+2. In the first line you should see something like `  ­ 9ëd          2019.1.0b1` where `2019.1.0b1` would be the unity version
 ---
 
 ## UNITY DEPENDENCY GENERATION:
 
-1.
-
+1. Download Unity from `https://unity3d.com/unity/beta/<VERSION>` if it's a beta or `https://unity3d.com/unity/whats-new/<VERSION>`
+2. Install it (you don't need anything other than the core files [no need to select il2cpp or mono])
+3. Start it and create a new project
+4. Make sure that you scene is completely empty
+5. 1
 ---
 
 ## CONSOLE DIFFERENCES:
 
-Normal Console is for the Logger class used by MelonLoader.ModHandler and Mods for debugging and developing Mods.
-Debug Console is for the debugging of MelonLoader internals.
+- Normal Console is for the Logger class used by MelonLoader.ModHandler and Mods for debugging and developing Mods.
+- Debug Console is for the debugging of MelonLoader internals.
 
 ---
 
-All Mods get placed in the created Mods folder in the game's install folder.
-All Logs are made in the created Logs folder in the game's install folder.
+- All Mods get placed in the created Mods folder in the game's install folder.
+- All Logs are made in the created Logs folder in the game's install folder.
 
 Specific combinations of Compile Versions will open a specific Console by Default:
-MelonLoader [DEBUG] & MelonLoader.ModHandler [RELEASE] = Debug Console
-MelonLoader [RELEASE] & MelonLoader.ModHandler [DEBUG] = Normal Console
-MelonLoader [DEBUG] & MelonLoader.ModHandler [DEBUG] = Debug Console
-MelonLoader [RELEASE] & MelonLoader.ModHandler [RELEASE] = Left up to the Launch Options
+| MelonLoader | MelonLoader.ModHandler | Result                        |
+|-------------|------------------------|-------------------------------|
+| DEBUG       | RELEASE                | Debug Console                 |
+| RELEASE     | DEBUG                  | Normal Console                |
+| DEBUG       | DEBUG                  | Debug Console                 |
+| RELEASE     | RELEASE                | Left up to the Launch Options |
